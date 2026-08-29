@@ -19,18 +19,16 @@ export function HeaderActionButtons({ chatStarted: _chatStarted }: HeaderActionB
       {/* Deploy Button */}
       {shouldShowButtons && <DeployButton />}
 
-      {/* Debug Tools */}
+      {/* Advanced support tools are intentionally secondary to the publish flow. */}
       {shouldShowButtons && (
         <div className="flex border border-bolt-elements-borderColor rounded-md overflow-hidden text-sm">
           <button
-            onClick={() =>
-              window.open('https://github.com/stackblitz-labs/bolt.diy/issues/new?template=bug_report.yml', '_blank')
-            }
+            onClick={() => window.open('https://github.com/waseemkhanjdpr1902/bolt.diy/issues/new', '_blank')}
             className="rounded-l-md items-center justify-center [&:is(:disabled,.disabled)]:cursor-not-allowed [&:is(:disabled,.disabled)]:opacity-60 px-3 py-1.5 text-xs bg-accent-500 text-white hover:text-bolt-elements-item-contentAccent [&:not(:disabled,.disabled)]:hover:bg-bolt-elements-button-primary-backgroundHover outline-accent-500 flex gap-1.5"
             title="Report Bug"
           >
             <div className="i-ph:bug" />
-            <span>Report Bug</span>
+            <span>Get Help</span>
           </button>
           <div className="w-px bg-bolt-elements-borderColor" />
           <button
@@ -46,7 +44,7 @@ export function HeaderActionButtons({ chatStarted: _chatStarted }: HeaderActionB
             title="Download Debug Log"
           >
             <div className="i-ph:download" />
-            <span>Debug Log</span>
+            <span>Support Log</span>
           </button>
         </div>
       )}

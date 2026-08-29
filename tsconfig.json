@@ -5,8 +5,7 @@
       "@remix-run/cloudflare",
       "vite/client",
       "@cloudflare/workers-types/2023-07-01",
-      "@types/dom-speech-recognition",
-      "electron"
+      "@types/dom-speech-recognition"
     ],
     "isolatedModules": true,
     "esModuleInterop": true,
@@ -34,5 +33,6 @@
     "**/.server/**/*.tsx",
     "**/.client/**/*.ts",
     "**/.client/**/*.tsx"
-  ]
+  ],
+  "exclude": ["electron", "functions", "build", "dist"]
 }

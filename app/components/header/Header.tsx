@@ -17,10 +17,15 @@ export function Header() {
     >
       <div className="flex items-center gap-2 z-logo text-bolt-elements-textPrimary cursor-pointer">
         <div className="i-ph:sidebar-simple-duotone text-xl" />
-        <a href="/" className="text-2xl font-semibold text-accent flex items-center">
-          {/* <span className="i-bolt:logo-text?mask w-[46px] inline-block" /> */}
-          <img src="/logo-light-styled.png" alt="logo" className="w-[90px] inline-block dark:hidden" />
-          <img src="/logo-dark-styled.png" alt="logo" className="w-[90px] inline-block hidden dark:block" />
+        <a
+          href="/"
+          className="text-xl font-bold text-bolt-elements-textPrimary flex items-center gap-2"
+          aria-label="Codely home"
+        >
+          <span className="grid h-9 w-9 place-items-center rounded-xl bg-accent-500 text-sm font-black text-white">
+            C
+          </span>
+          <span>Codely</span>
         </a>
       </div>
       {chat.started && ( // Display ChatDescription and HeaderActionButtons only when the chat has started.
